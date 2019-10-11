@@ -23,14 +23,14 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
 
     <title>My Fav Barber Shop</title>
     <style>
-      /* EXERCISE 2:  
-       Style h1 color, alignment, size as you like it;
-       Style h2 color, alignment, size as you like it;
-       Style page background color as you like it
-       [EXTRA]
-       Set a red-ish color when the input of the forms are invalid
-       Set a ok-ish color when the input of the forms are valid
-    */
+      /* EXERCISE 2:
+         Style h1 color, alignment, size as you like it;
+         Style h2 color, alignment, size as you like it;
+         Style page background color as you like it
+         [EXTRA]
+         Set a red-ish color when the input of the forms are invalid
+         Set a ok-ish color when the input of the forms are valid
+      */
       html {
         box-sizing: border-box;
         min-height: 100%;
@@ -40,6 +40,7 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
         text-align: center;
         font-size: 2.2rem;
         margin: 0;
+        padding: 10px;
       }
 
       .promotion {
@@ -78,6 +79,25 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
       th {
         font-weight: bold;
       }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+        color: black;
+        align: right;
+      }
     </style>
   </head>
   <body>
@@ -86,10 +106,19 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
         Add a navbar with the links to the sections
         -->
 
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#promotion">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
       <!-- EXERCISE 3:
             Write the main title of the barber shop and a smaller claim.
         -->
-      <h1>WELCOME TO THE BARBER SHOP</h1>
+      <header>
+        <h1>WELCOME TO THE BARBER SHOP</h1>
+      </header>
       <!-- EXERCISE 4: 
             Write a section in which you explain a current promotion
         -->
