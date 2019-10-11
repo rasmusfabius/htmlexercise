@@ -66,6 +66,7 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
       }
 
       .bookHairCut {
+        margin-bottom: 50px;
         text-align: center;
       }
 
@@ -96,7 +97,10 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
         padding: 8px;
         text-decoration: none;
         color: black;
-        align: right;
+      }
+
+      .emailInput {
+        margin-top: 50px;
       }
     </style>
   </head>
@@ -145,7 +149,7 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
             [OPTIONAL] On submit click, console log the value of the email
         -->
 
-      <form>
+      <form class="emailInput">
         <input type="email" name="email" id="email" placeholder="Leave Email" required />
         <button onclick="userInput()">Submit</button>
         <button type="reset">Reset</button>
